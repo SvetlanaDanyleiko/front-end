@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-wight, initial-scale=1.0">
+  <title>Панель навигации в HTML5</title>
+  <style>
+    .nav li {
+      display: inline;
+    }
+
+    ul.nav a {
+      color: var(--Black, #070707);
+      font-family: Open Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.36px;
+      text-decoration: none;
+    }
+
+    .header {
+      display: flex;
+      width: 1440px;
+      height: 80px;
+      padding: 0px 120px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .main {
+      width: 1440px;
+      height: 4521px;
+      background: #FFF;
+    }
+
+    .Contacts {
+      display: flex;
+      width: 970px;
+      height: 400px;
+      padding: 0px 3px;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      flex-shrink: 0;
+    }
+
+    .Portfolio {
+      display: flex;
+      width: 970px;
+      height: 2268px;
+      padding: 20px 235px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      flex-shrink: 0;
+    }
+
+    .skills {
+      display: flex;
+      width: 970px;
+      height: 500px;
+      padding: 20px 280px;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      flex-shrink: 0;
+    }
+
+    .wrapper {
+      display: flex;
+      width: 970px;
+      height: 497px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 50px;
+      flex-shrink: 0;
+    }
+
+    .about_me {
+      display: flex;
+      width: 970px;
+      height: 500px;
+      padding: 20px 280px;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      flex-shrink: 0;
+    }
+
+    .hero {
+      display: flex;
+      width: 970px;
+      height: 500px;
+      padding: 20px 280px;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      flex-shrink: 0;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .Contacts {
+      display: flex;
+      width: 970px;
+      height: 500px;
+      padding: 20px 280px;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      flex-shrink: 0;
+    }
+    .send_message {
+      display: flex;
+      width: 180px;
+      height: 44px;
+      padding: 0px 16px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 22px;
+      background: var(--Black, #070707);
+    }
+    .white_message {
+      width: 148px;
+      height: 24px;
+      flex-shrink: 0;
+      color: #FFF;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1.8px;
+    }
+  </style>
+</head>
+
+<body id="main">
+  <div class="">
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav">
+            <li><a href="#">Home |</a></li>
+            <li><a href="#">Adout me |</a></li>
+            <li><a href="#">Skills |</a></li>
+            <li><a href="#">Portfolio |</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav> 
+      </div>
+    </header>
+    <hr> 
+    <section class="hero">
+      <div class="hero_container">
+        <h1>Denis Novik</h1>
+        <img class="hero_img" src="img/photox940.jpg" alt="photo" width="970" height="387">
+      </div>
+    </section>
+    <section class="about_me">
+      <div class="about_me_container">
+        <h2>About me</h2>
+        <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
+        <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+        <p>Ready to implement excellent projects with wonderful people.</p>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="skills_container">
+        <h2>Skills</h2>
+        <p>I work in such programs as</p>
+        <img class="skills_img" src="img/Skills.png" alt="photo" width="970" height="564">
+      </div>
+    </section>
+    <section class="Portfolio">
+      <div class="Portfolio_container">
+        <h2 align="center">Portfolio</h2>
+        <img class="Portfolio_img" src="img/Fashion-Store.png" alt="photo" width="970" height="540">
+        <p>Online fashion store - Homepage</p>
+      </div>
+      <div class="Reebok_container">
+        <img class="Reebok_img" src="img/reebok_web.png" alt="photo" width="970" height="540">
+        <p>Reebok Store - Concept</p>
+      </div>
+      <div class="Camera">
+        <img class="Camera_img" src="img/braun-landing.png" alt="photo" width="970" height="540">
+        <p>Braun Landing Page - Concept</p>
+      </div>
+    </section>
+    <section class="Contacts">
+      <div class="Contacts_container">
+        <h2>Contacts</h2>
+        <p>Want to know more or just chat? You are welcome!</p>
+        <button class="send_message">
+          <p class="white_message">Send message</p>
+        </button>    
+        <img class="Contacts_img" src="img/Social-group.png" alt="photo" width="310" height="50">
+        <p>Like me on</p>
+        <p> LinkedIn, Instagram, Behance,</p>
+        <p>Dribble </p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
