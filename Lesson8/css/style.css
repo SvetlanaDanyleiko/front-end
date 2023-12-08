@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --title-font: 700 24px/normal var(--main-font);
+    --sub-title-font: 400 16px/24px var(--main-font);
+    --text-font: 400 18px/24px var(--main-font);
+    --sub-text-font: 400 11px/18px var(--main-font);
+
+    --dark-grey-color: #3B3F45;
+    --light-dark-grey-color: #4A4F56;
+    --white-color: #fff;
+    --red-color: #ff8984;
+
+    --field-color: #8883DE;
+    --field-sub-color: #7A7593;
+    --field-hover-color: #625E77;
+    --field-active-color: var(--red-color);
+}
+
+body {
+    font: var(--text-font);
+    background-color: var(--dark-grey-color);
+    color: var(--white-color);
+}
+
+.container {
+    max-width: 534px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--light-dark-grey-color);
+    padding: 19px 0 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--red-color);
+    margin-bottom: 4px;
+}
+
+.header_title {
+    font: var(--title-font);
+    margin-bottom: 4px;
+}
+
+.header_text {
+    font: var(--sub-title-font);
+}
+
+.form_field {
+    background-color: var(--field-color);
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.form_field:nth-child(even) {
+    background-color: var(--field-sub-color);
+}
+
+.form_field:hover {
+    background-color: var(--field-hover-color);
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.form_field:active {
+    border-color: var(--red-color);
+}
+
+.form_text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form_sub-text {
+    font: var(--sub-text-font);
+}
+
+.form_sub-text::before {
+    content: "(";
+}
+
+.form_sub-text::after {
+    content: ")";
+}
+
+.form_check {
+    width: 19px;
+    height: 19px;
+}
+
+.form_check:checked+form_label {
+    background-color: #ff8984;
+}
+
+input:checked+label p {
+    text-decoration: line-through
+}
+
+.button {
+    width: 534px;
+    height: 45px;
+    margin-top: 57px;
+    background-color: var(--light-dark-grey-color);
+    font: var(--text-font);
+    color: #ff8984;
+    border-color: #19181816;
+}
+
+.button:hover {
+    border-color: #ff8984;
+    ;
+}
+
+.button:active {
+    border-color: #250692;
+}
+
+.text_button {
+    border-color: #ff8984;
+    border: 2px solid #ff8984;
+    margin-left: 200px;
+    margin-right: 200px;
+}
